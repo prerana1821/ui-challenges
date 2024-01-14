@@ -3,6 +3,7 @@
 Given a textarea and a document box, Insert the text in the document in such a way that it HIGHLIGHTS the text content which is most recently added to the document.
 
 ## Output
+https://github.com/prerana1821/ui-challenges/assets/61601706/a319b260-8497-4af1-8f08-9ee91d737641
 
 ## User stories
 
