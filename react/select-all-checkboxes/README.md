@@ -3,7 +3,7 @@
 Given a Select All checkbox - toggle the children's checkboxes in such a way that when the select all button is clicked, all the boxes are checked. Similarly, when the button is toggled, the checkboxes become unchecked.
 
 ## Output
-https://github.com/prerana1821/ui-challenges/assets/61601706/2c99d396-d364-4210-b307-ae048ceb4740
+https://github.com/prerana1821/ui-challenges/assets/61601706/028b3c0e-8051-49a1-ba62-2b48491bc67f
 
 ## User Stories
 - Create a Checkbox component that takes in checked, onChange and label as props.
