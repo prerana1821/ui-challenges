@@ -30,7 +30,9 @@ export const Document = () => {
         }}
       ></textarea>
 
-      <p>Document</p>
+      <p>
+        <strong>Document</strong>
+      </p>
       {documentText ? (
         <div
           className='document'
