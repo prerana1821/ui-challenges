@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&display=swap");
+
+body {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to bottom, #5b21b6, #1e40af);
+  color: #fff;
+}
+
+form {
+  width: 80%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+}
+
+label {
+  color: #000;
+  width: 90%;
+}
+
+.error {
+  color: #dc2626;
+}
+
+.success {
+  margin-top: 10px;
+  text-align: center;
+  color: #22c55e;
+}
+
+input {
+  padding: 10px 5px;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #cbd5e1;
+  margin-bottom: 2px;
+  box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px,
+    rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+}
+
+input::placeholder {
+  color: #cbd5e1;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 300;
+}
+
+input:focus {
+  outline: none;
+}
+
+button {
+  margin-top: 20px;
+  background: none;
+  color: #000;
+  border: 2px solid #475569;
+  border-radius: 4px;
+  width: 40%;
+  align-self: center;
+  padding: 10px;
+  position: relative;
+  z-index: 10;
+  box-shadow: 5px 5px 0px 0px #475569;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
