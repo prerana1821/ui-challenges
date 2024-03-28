@@ -1,7 +1,5 @@
 import { ChangeEvent, FormEvent, useReducer } from "react";
 
-import "./style.css";
-
 interface State {
   firstName: { value: string; error: string | null };
   lastName: { value: string; error: string | null };

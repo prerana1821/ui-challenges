@@ -60,24 +60,26 @@ const JobFeed = () => {
     <div className={"container"}>
       <h1 className={"header"}>Hackernews Jobs</h1>
 
-      {jobs.length > 0 &&
-        jobs.map((job: JobI) => {
-          return (
-            <a
-              key={job.id}
-              href={job.url}
-              target='__blank'
-              style={{ textDecoration: "none", color: "black" }}
-            >
-              <div className={"postContainer"}>
-                <p>ID: {job.id}</p>
-                <h1>{job.title}</h1>
-                <p>{moment(job?.time).format("Do MMM YYYY hh:mm a")}</p>
-                <p>Posted by: {job.by}</p>
-              </div>
-            </a>
-          );
-        })}
+      <div className='allPostsContainer'>
+        {jobs.length > 0 &&
+          jobs.map((job: JobI) => {
+            return (
+              <a
+                key={job.id}
+                href={job.url}
+                target='__blank'
+                style={{ textDecoration: "none", color: "black" }}
+              >
+                <div className={"postContainer"}>
+                  <p>ID: {job.id}</p>
+                  <h1>{job.title}</h1>
+                  <p>{moment(job?.time).format("Do MMM YYYY hh:mm a")}</p>
+                  <p>Posted by: {job.by}</p>
+                </div>
+              </a>
+            );
+          })}
+      </div>
 
       {jobIds.length !== count && (
         <button
