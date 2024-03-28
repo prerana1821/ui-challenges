@@ -54,34 +54,17 @@ function CountriesList() {
           placeholder='Type to search'
           type='text'
           value={searchText}
-          style={{
-            padding: "10px",
-            borderRadius: "5px",
-            border: "none",
-            width: "400px",
-          }}
           onChange={(e) => {
             setSearchText(e.target.value);
             onChange(e.target.value);
           }}
         />
 
-        <div style={{ height: "100px", position: "relative" }}>
+        <div className='options'>
           {options.length > 0 ? (
-            <div
-              style={{
-                borderRadius: "5px",
-                position: "absolute",
-                top: "10px",
-                padding: "4px 4px",
-              }}
-            >
+            <div className='option-items'>
               {options.map((el, idx) => (
-                <div
-                  className='listItem'
-                  key={`option-${el}-${idx}`}
-                  onClick={() => addToList(el)}
-                >
+                <div key={`option-${el}-${idx}`} onClick={() => addToList(el)}>
                   {el}
                 </div>
               ))}
@@ -92,23 +75,13 @@ function CountriesList() {
         {list.length > 0 ? (
           <div
             style={{
-              width: "200px",
               padding: "10px",
             }}
           >
             {list.map((el, idx) => (
-              <div
-                style={{
-                  display: "flex",
-                  flexDirection: "row",
-                  justifyContent: "space-between",
-                  marginBottom: "4px",
-                }}
-                key={`element-${el}-${idx}`}
-              >
+              <div className='list-items' key={`element-${el}-${idx}`}>
                 <p>{el}</p>
                 <span
-                  style={{ cursor: "pointer" }}
                   onClick={() => {
                     handleDelete(idx);
                   }}
