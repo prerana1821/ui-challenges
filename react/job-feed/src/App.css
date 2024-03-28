@@ -1,0 +1,53 @@
+.container {
+  padding: 0.4rem;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.allPostsContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.postContainer {
+  padding: 1rem;
+  border-radius: 5px;
+  border: 1px solid #e2e8f0;
+  margin-bottom: 1rem;
+  width: 20rem;
+  margin-right: 10px;
+  transition: all 0.1s ease-in-out;
+}
+.postContainer:hover {
+  background: #e2e8f0;
+}
+
+.postContainer h1 {
+  font-size: 1rem;
+  color: black;
+  max-width: 400px;
+  min-width: 200px;
+}
+.postContainer p {
+  font-size: 0.8rem;
+  color: black;
+}
+.postContainer p span {
+  color: #06b6d4;
+  font-weight: 400;
+}
+
+.button {
+  border: 1px solid #64748b;
+  background: #475569;
+  padding: 1rem 4rem;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 3px;
+  margin: 0 auto;
+}
