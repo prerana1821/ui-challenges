@@ -5,6 +5,7 @@ export default function App() {
   return (
     <div>
       <div className='container'>
+        <h1>Link Previewer</h1>
         <div className='text'>
           Checkout my{" "}
           <LinkPreviewer url='https://precodes.hashnode.dev/'>

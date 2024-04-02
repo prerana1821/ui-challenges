@@ -36,6 +36,7 @@ export default function App() {
     <div>
       <Toaster reverseOrder={true} />
       <div className='container'>
+        <h1>useOutsideClick Custom Hook</h1>
         <div className='centered-box' ref={centeredRef}>
           <p>Click Outside To Show Toast</p>
         </div>

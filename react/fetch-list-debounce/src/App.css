@@ -34,15 +34,31 @@ input {
   margin-bottom: 4px;
   border-bottom: 1px solid;
   cursor: pointer;
+  padding: 0.5rem 0;
 }
 
 .options {
   height: 100px;
   position: relative;
+  background-color: #fff;
+  color: #000;
+  margin: 1rem 0;
+  border-radius: 0.5rem;
+  padding: 0 1rem;
 }
 
 .option-items {
   position: absolute;
   top: 10px;
   padding: 4px 4px;
+  width: 85%;
+}
+
+.option-item {
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.option-item:hover {
+  background-color: #f2f2f2;
 }

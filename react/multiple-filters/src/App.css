@@ -46,7 +46,8 @@ p {
 .items-container {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 20px;
+  width: 50%;
+  margin: 3rem auto;
   justify-content: center;
   align-items: center;
 }

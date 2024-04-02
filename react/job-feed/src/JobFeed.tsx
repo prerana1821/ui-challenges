@@ -58,7 +58,7 @@ const JobFeed = () => {
 
   return (
     <div className={"container"}>
-      <h1 className={"header"}>Hackernews Jobs</h1>
+      <h1 className={"header"}>Hackernews Job Feed</h1>
 
       <div className='allPostsContainer'>
         {jobs.length > 0 &&

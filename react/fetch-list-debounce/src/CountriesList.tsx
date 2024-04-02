@@ -60,17 +60,21 @@ function CountriesList() {
           }}
         />
 
-        <div className='options'>
-          {options.length > 0 ? (
+        {options.length > 0 ? (
+          <div className='options'>
             <div className='option-items'>
               {options.map((el, idx) => (
-                <div key={`option-${el}-${idx}`} onClick={() => addToList(el)}>
+                <div
+                  className='option-item'
+                  key={`option-${el}-${idx}`}
+                  onClick={() => addToList(el)}
+                >
                   {el}
                 </div>
               ))}
             </div>
-          ) : null}
-        </div>
+          </div>
+        ) : null}
         <h1>My List</h1>
         {list.length > 0 ? (
           <div

@@ -21,8 +21,8 @@ export default function App() {
     <div>
       <Toaster position='top-center' reverseOrder={false} />
       <div className='container'>
+        <h1>useKeyPress Custom Hook</h1>
         <h1>Shift + Enter</h1>
-
         <p>Hit Shift + Enter to show a toast! 🎉</p>
       </div>
     </div>

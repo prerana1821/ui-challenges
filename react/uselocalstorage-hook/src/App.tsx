@@ -15,7 +15,7 @@ export default function App() {
 
   return (
     <div className='container'>
-      <h1>useLocalStorage</h1>
+      <h1>useLocalStorage Custom Hook</h1>
 
       <select
         className='minimal'

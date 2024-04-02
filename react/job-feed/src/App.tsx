@@ -2,5 +2,9 @@ import * as React from "react";
 import JobFeed from "./JobFeed";
 
 export default function App() {
-  return <JobFeed />;
+  return (
+    <div>
+      <JobFeed />
+    </div>
+  );
 }

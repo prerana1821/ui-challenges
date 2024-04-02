@@ -50,4 +50,5 @@
   cursor: pointer;
   border-radius: 3px;
   margin: 0 auto;
+  display: flex;
 }
