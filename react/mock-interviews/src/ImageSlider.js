@@ -35,11 +35,23 @@ export const ImageSlider = () => {
           Previous
         </button>
         <div>
-          <img src={images[imgCount]} alt={"Slider"} className='slider-image' />{" "}
+          {/* <img src={images[imgCount]} alt={"Slider"} className='slider-image' />{" "} */}
+          {images.map((image, index) => {
+            return (
+              <img
+                key={index}
+                src={image}
+                alt={"Slider"}
+                className='slider-image'
+                style={{ display: imgCount === index ? "block" : "none" }}
+              />
+            );
+          })}
           <div className='slider-pointer-container'>
             {images.map((pointer, index) => {
               return (
                 <div
+                  key={index}
                   onClick={() => setImgCount(index)}
                   className='slider-pointer'
                   style={{
@@ -52,7 +64,6 @@ export const ImageSlider = () => {
         </div>
         <button
           onClick={() => {
-            console.log(imgCount, images.length);
             if (imgCount < images.length - 1) {
               setImgCount(imgCount + 1);
             }
