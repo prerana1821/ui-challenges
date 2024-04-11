@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&display=swap");
+
+body {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #5b21b6, #1e40af);
+  color: #fff;
+}
+
+.lightbox {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 10px 4px;
+  gap: 1rem;
+}
+
+.image {
+  position: relative;
+  border: none;
+}
+
+.image:hover {
+  cursor: pointer;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: black;
+}
+.overlay:hover {
+  opacity: 0.5;
+  cursor: pointer;
+  border-radius: 0.5rem;
+}
+
+.full-screen-modal {
+  position: absolute;
+  background: rgb(0 0 0 / 41%);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+}
+
+.modal-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.image-btn {
+  box-shadow: 0 20px 50px #2563eb;
+}
+
+.tile {
+  position: fixed;
+  left: 50%;
+  bottom: -35px;
+  transform: translate(-50%, -50%);
+  display: flex;
+  gap: 0.5rem;
+}
