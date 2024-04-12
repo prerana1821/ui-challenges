@@ -1,4 +1,4 @@
-import MyList from "./MyList";
+import MyList from ".";
 
 describe("<MyList />", () => {
   it("renders without crashing with non-empty list", () => {

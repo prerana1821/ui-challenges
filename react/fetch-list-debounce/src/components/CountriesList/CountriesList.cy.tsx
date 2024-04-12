@@ -1,4 +1,4 @@
-import CountriesList from "./CountriesList";
+import CountriesList from ".";
 
 describe("<CountriesList />", () => {
   beforeEach(() => {

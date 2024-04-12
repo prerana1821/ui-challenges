@@ -1,6 +1,6 @@
 import { useCallback, useState } from "react";
-import MyList from "./MyList";
-import OptionsList from "./OptionsList";
+import MyList from "../MyList";
+import OptionsList from "../OptionsList";
 
 function CountriesList() {
   const [searchText, setSearchText] = useState<string>("");

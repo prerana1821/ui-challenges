@@ -1,4 +1,4 @@
-import OptionsList from "./OptionsList";
+import OptionsList from ".";
 
 describe("<OptionsList />", () => {
   it("renders without crashing with non-empty options list", () => {
