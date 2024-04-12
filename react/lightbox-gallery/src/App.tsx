@@ -5,7 +5,7 @@ export default function App() {
   return (
     <div>
       <div className='container'>
-        <h1>Lightbox Gallery</h1>
+        <h1 data-testid='cypress-title'>Lightbox Gallery</h1>
         <Lightbox />
       </div>
     </div>

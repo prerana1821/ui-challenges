@@ -12,6 +12,7 @@ export default function Modal({
   return (
     <div
       className='full-screen-modal'
+      data-testid='modal-close'
       onClick={() => {
         setShowModal(false);
         setSelectedImageIndex(null);
@@ -29,6 +30,7 @@ export default function Modal({
             setSelectedImageIndex(null);
           }}
           className='image image-btn'
+          data-testid='modal-image'
           style={{
             height: "250px",
             width: "200px",
