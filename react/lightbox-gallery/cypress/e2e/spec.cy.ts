@@ -54,15 +54,12 @@ describe("Lighthouse Gallery", () => {
   });
 
   it("closes modal when clicking on the background", () => {
-    // Clicking on the first image
     cy.get(".tile .image").first().click();
 
     cy.get(".full-screen-modal").should("exist");
 
-    // Clicking on the background
     cy.get(".full-screen-modal").click("topLeft");
 
-    // Confirm the modal is closed
     cy.get(".full-screen-modal").should("not.exist");
   });
 });
