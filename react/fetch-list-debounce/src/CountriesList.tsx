@@ -1,4 +1,6 @@
-import React, { useCallback, useState } from "react";
+import { useCallback, useState } from "react";
+import MyList from "./MyList";
+import OptionsList from "./OptionsList";
 
 function CountriesList() {
   const [searchText, setSearchText] = useState<string>("");
@@ -31,6 +33,7 @@ function CountriesList() {
       .then((res) => res.json())
       .then((data) => {
         const { countries } = data;
+        console.log(countries);
         setOptions(countries);
       })
       .catch((err) => {
@@ -60,42 +63,11 @@ function CountriesList() {
           }}
         />
 
-        {options.length > 0 ? (
-          <div className='options'>
-            <div className='option-items'>
-              {options.map((el, idx) => (
-                <div
-                  className='option-item'
-                  key={`option-${el}-${idx}`}
-                  onClick={() => addToList(el)}
-                >
-                  {el}
-                </div>
-              ))}
-            </div>
-          </div>
-        ) : null}
+        {options.length > 0 && (
+          <OptionsList options={options} addToList={addToList} />
+        )}
         <h1>My List</h1>
-        {list.length > 0 ? (
-          <div
-            style={{
-              padding: "10px",
-            }}
-          >
-            {list.map((el, idx) => (
-              <div className='list-items' key={`element-${el}-${idx}`}>
-                <p>{el}</p>
-                <span
-                  onClick={() => {
-                    handleDelete(idx);
-                  }}
-                >
-                  ❎
-                </span>
-              </div>
-            ))}
-          </div>
-        ) : null}
+        <MyList list={list} handleDelete={handleDelete} />
       </div>
     </div>
   );
